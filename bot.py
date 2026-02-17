@@ -1,6 +1,8 @@
 import logging
+import os
 import random
 
+from dotenv import load_dotenv
 from telegram import Update, ReplyKeyboardMarkup, ReplyKeyboardRemove
 from telegram.ext import (
     ApplicationBuilder,
@@ -13,7 +15,8 @@ from telegram.ext import (
 
 import database as db
 
-BOT_TOKEN = "1465130142:AAG1Bk4vbL7ZkVzZJJnNukvuux5-q2Y26IQ"
+load_dotenv()
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
