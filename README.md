@@ -1,4 +1,4 @@
-# 🐂 Bulls & Cows — Telegram Bot
+# 🐂 Bulls & Cows - Telegram Bot
 
 A Telegram bot for playing the classic **Bulls and Cows** number-guessing game, with user registration and game statistics.
 
